@@ -8,14 +8,20 @@
     <!-- String for Favorite Page name -->
     <string name="favorite_label">Favorite Page</string>
 
+    <!-- String for Album Page name -->
+    <string name="album_label">Album Page</string>
+
     <!-- String for activity main description -->
     <string name="main_desc">This is a main page that diplay a variety mood where the user can choose in according to their preferences. At the bottom of the page, contain the navigation button to link other activity.</string>
 
     <!-- String for search activity description -->
     <string name="search_desc">This is the search page where user can search songs and the result of search appear below the search view. Clicking on the result the user is linked on the songs page. At the bottom of the page, contain the navigation button to link other activity.</string>
 
+    <!-- String for favorite activity description -->
+    <string name="favorite_desc">This is the favorite page where user add his favorite songs. For each song is possible play music through the relative button. In the bottom of the page there are the navigation button to link other pages.</string>
 
-    <string name="favorite_desc">This is the favorite page where user add his favorite songs. For each song is possible play music through the relative button. In the bottom of the page there are the navigation button to link pther pages.</string>
+    <!-- String for album activity description -->
+    <string name="album_desc">This is the album page where reside the favorite album for the user. In the bottom of the page there are the navigation button to link other pages.</string>
 
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
@@ -26,11 +32,17 @@
     <!-- String for search song 1 -->
     <string name="search_song_1">One More Light</string>
 
+    <!-- String for number song 1 -->
+    <string name="number_song_1">20 Songs</string>
+
     <!-- String for search artist 2 -->
     <string name="search_artist_2">Justin Timberlake</string>
 
     <!-- String for search song 2 -->
     <string name="search_song_2">Mirror</string>
+
+    <!-- String for number song 2 -->
+    <string name="number_song_2">20 Songs</string>
 
     <!-- String for search artist 3 -->
     <string name="search_artist_3">Mr Rain</string>
@@ -38,16 +50,34 @@
     <!-- String for search song 3 -->
     <string name="search_song_3">I grandi non piangono mai</string>
 
+    <!-- String for number song 3 -->
+    <string name="number_song_3">20 Songs</string>
+
     <!-- String for search artist 4 -->
     <string name="search_artist_4">Metallica</string>
 
     <!-- String for search song 4 -->
     <string name="search_song_4">Nothing Else Matters</string>
 
+    <!-- String for number song 4 -->
+    <string name="number_song_4">20 Songs</string>
+
     <!-- String for search artist 5 -->
     <string name="search_artist_5">Linkin Park</string>
 
     <!-- String for search song 5 -->
     <string name="search_song_5">New Divide</string>
+
+    <!-- String for number song 5 -->
+    <string name="number_song_5">20 Songs</string>
+
+    <!-- String for search artist 6 -->
+    <string name="search_artist_6">Top Hits Italia</string>
+
+    <!-- String for search song 6 -->
+    <string name="search_song_6">Top Hits Italia</string>
+
+    <!-- String for number song 6 -->
+    <string name="number_song_6">20 Songs</string>
 
 </resources>
