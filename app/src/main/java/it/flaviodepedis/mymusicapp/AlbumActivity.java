@@ -5,17 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class AlbumActivity extends AppCompatActivity {
 
     // Declare private variable to reference View of the menu bar (menu_bar_2)
+    private ImageView imgHome;
     private ImageView imgSearch;
     private ImageView imgFavorite;
     private ImageView imgAlbum;
     private ImageView imgPayment;
 
-    //album_1
-    //album_2
+    private LinearLayout album_1;
+    private LinearLayout album_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,41 @@ public class AlbumActivity extends AppCompatActivity {
         setContentView(R.layout.activity_album);
 
         // Find the View reference
+        imgHome = (ImageView) findViewById(R.id.img_home);
         imgSearch = (ImageView) findViewById(R.id.img_search);
         imgFavorite = (ImageView) findViewById(R.id.img_favorite);
         imgAlbum = (ImageView) findViewById(R.id.img_album);
         imgPayment = (ImageView) findViewById(R.id.img_credit);
+
+        album_1 = (LinearLayout) findViewById(R.id.album_1);
+        album_2 = (LinearLayout) findViewById(R.id.album_2);
+
+        // Set a event listener for LinearLayout album_1
+        album_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent alb1 = new Intent(AlbumActivity.this, PlayActivity.class);
+                startActivity(alb1);
+            }
+        });
+
+        // Set a event listener for LinearLayout album_2
+        album_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent alb2 = new Intent(AlbumActivity.this, PlayActivity.class);
+                startActivity(alb2);
+            }
+        });
+
+        // Set a event Listener View Home
+        imgHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(AlbumActivity.this, MainActivity.class);
+                startActivity(homeIntent);
+            }
+        });
 
         // Set a event Listener View Search
         imgSearch.setOnClickListener(new View.OnClickListener() {

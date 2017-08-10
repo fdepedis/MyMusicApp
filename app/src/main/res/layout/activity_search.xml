@@ -82,7 +82,7 @@
                     android:layout_below="@id/search_song" />
 
                 <ImageView
-                    android:id="@+id/img_favorite_back"
+                    android:id="@+id/img_favorite_black"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_marginStart="10dp"
