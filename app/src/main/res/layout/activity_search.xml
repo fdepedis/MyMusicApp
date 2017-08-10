@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/search_desc"
         android:layout_margin="15dp"
-        android:background="@color/primary"
+        android:background="@color/colorAccent"
         android:iconifiedByDefault="false"
         android:queryHint="@string/search_song" />
 
