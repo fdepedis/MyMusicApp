@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home_48dp" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_search_48dp" />
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_favorite_48dp" />
+
+    <ImageView
+        android:id="@+id/img_album"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_album_48dp" />
+
+    <ImageView
+        android:id="@+id/img_credit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_credit_card_48dp" />
+
+</LinearLayout>
