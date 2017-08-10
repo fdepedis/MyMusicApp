@@ -10,12 +10,8 @@
 
     <TextView
         android:id="@+id/favorite_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/favorite_desc"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="@color/description_activity" />
+        style="@style/DescActivityStyle"
+        android:text="@string/favorite_desc" />
 
     <ScrollView
         android:id="@+id/scroll"
@@ -267,9 +263,7 @@
 
     <LinearLayout
         android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        style="@style/MenuBarStyle"
         android:orientation="horizontal">
 
         <include

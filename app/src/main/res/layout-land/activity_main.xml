@@ -10,12 +10,8 @@
 
     <TextView
         android:id="@+id/main_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/main_desc"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="@color/description_activity" />
+        style="@style/DescActivityStyle"
+        android:text="@string/main_desc" />
 
     <ScrollView
         android:id="@+id/scroll"
@@ -31,62 +27,32 @@
 
             <ImageView
                 android:id="@+id/img_hiphop"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_hiphop"/>
 
             <ImageView
                 android:id="@+id/img_pop"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_pop"/>
 
             <ImageView
                 android:id="@+id/img_blues"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_blues"/>
 
             <ImageView
                 android:id="@+id/img_metal"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_metal"/>
 
             <ImageView
                 android:id="@+id/img_rock"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_rock"/>
 
             <ImageView
                 android:id="@+id/img_raggae"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:layout_gravity="fill_horizontal"
-                android:layout_margin="15dp"
+                style="@style/MoodStyle"
                 android:src="@drawable/ic_raggae"/>
 
         </GridLayout>
@@ -95,9 +61,7 @@
 
     <LinearLayout
         android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        style="@style/MenuBarStyle"
         android:orientation="horizontal">
 
         <include
