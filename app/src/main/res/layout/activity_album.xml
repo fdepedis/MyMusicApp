@@ -29,7 +29,7 @@
             <LinearLayout
                 android:id="@+id/album_1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="240dp"
                 android:layout_weight="1"
                 android:layout_margin="15dp"
                 android:orientation="vertical"
@@ -69,7 +69,7 @@
             <LinearLayout
                 android:id="@+id/album_2"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="240dp"
                 android:layout_weight="1"
                 android:layout_margin="15dp"
                 android:orientation="vertical"
