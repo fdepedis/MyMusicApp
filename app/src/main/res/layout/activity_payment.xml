@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_sfondo_home"
+    android:orientation="vertical"
+    tools:context="it.flaviodepedis.mymusicapp.MainActivity">
+
+    <TextView
+        android:id="@+id/payment_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/payment_desc"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/description_activity" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bar"
+        android:layout_below="@id/payment_desc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/primary_light">
+
+                <ImageView
+                    android:id="@+id/img_search_album_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_linkin_park" />
+
+                <TextView
+                    android:id="@+id/search_artist_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_artist_1"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_text"
+                    android:layout_toEndOf="@id/img_search_album_1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/search_song_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_song_1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/secondary_text"
+                    android:layout_toEndOf="@id/img_search_album_1"
+                    android:layout_below="@id/search_artist_1"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/btn_play_1"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnBuyNow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/primary_light">
+
+                <ImageView
+                    android:id="@+id/img_search_album_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_justin" />
+
+                <TextView
+                    android:id="@+id/search_artist_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_artist_2"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_text"
+                    android:layout_toEndOf="@id/img_search_album_2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/search_song_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_song_2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/secondary_text"
+                    android:layout_toEndOf="@id/img_search_album_2"
+                    android:layout_below="@id/search_artist_2"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/btn_play_2"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnBuyNow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/primary_light">
+
+                <ImageView
+                    android:id="@+id/img_search_album_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_mrrain" />
+
+                <TextView
+                    android:id="@+id/search_artist_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_artist_3"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_text"
+                    android:layout_toEndOf="@id/img_search_album_3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/search_song_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_song_3"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/secondary_text"
+                    android:layout_toEndOf="@id/img_search_album_3"
+                    android:layout_below="@id/search_artist_3"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/btn_play_3"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnBuyNow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/primary_light">
+
+                <ImageView
+                    android:id="@+id/img_search_album_4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_metallica" />
+
+                <TextView
+                    android:id="@+id/search_artist_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_artist_4"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_text"
+                    android:layout_toEndOf="@id/img_search_album_4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/search_song_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_song_4"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/secondary_text"
+                    android:layout_toEndOf="@id/img_search_album_4"
+                    android:layout_below="@id/search_artist_4"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/btn_play_4"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnBuyNow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/primary_light">
+
+                <ImageView
+                    android:id="@+id/img_search_album_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_transformers" />
+
+                <TextView
+                    android:id="@+id/search_artist_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_artist_5"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/primary_text"
+                    android:layout_toEndOf="@id/img_search_album_5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/search_song_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_song_5"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/secondary_text"
+                    android:layout_toEndOf="@id/img_search_album_5"
+                    android:layout_below="@id/search_artist_5"
+                    android:layout_marginStart="10dp" />
+
+                <Button
+                    android:id="@+id/btn_play_5"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btnBuyNow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/menu_bar_2"
+            layout="@layout/menu_bar_2" />
+
+    </LinearLayout>
+
+</RelativeLayout>

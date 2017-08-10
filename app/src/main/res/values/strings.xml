@@ -11,6 +11,9 @@
     <!-- String for Album Page name -->
     <string name="album_label">Album Page</string>
 
+    <!-- String for Payment Page name -->
+    <string name="payment_label">Payment Page</string>
+
     <!-- String for activity main description -->
     <string name="main_desc">This is a main page that diplay a variety mood where the user can choose in according to their preferences. At the bottom of the page, contain the navigation button to link other activity.</string>
 
@@ -22,6 +25,9 @@
 
     <!-- String for album activity description -->
     <string name="album_desc">This is the album page where reside the favorite album for the user. In the bottom of the page there are the navigation button to link other pages.</string>
+
+    <!-- String for activity main description -->
+    <string name="payment_desc">This is the payment page that diplay a set of album/song that the user can buy clicking the button associate. At the bottom of the page, contain the navigation button to link other activity.</string>
 
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
@@ -79,5 +85,8 @@
 
     <!-- String for number song 6 -->
     <string name="number_song_6">20 Songs</string>
+
+    <!-- String for button Buy Now -->
+    <string name="btnBuyNow">Buy Now</string>
 
 </resources>
