@@ -9,261 +9,28 @@
     tools:context="it.flaviodepedis.mymusicapp.PlayActivity">
 
     <TextView
-        android:id="@+id/favorite_desc"
+        android:id="@+id/play_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="@string/favorite_desc"
+        android:text="@string/play_desc"
         android:textAppearance="?android:textAppearanceSmall"
         android:textColor="@color/description_activity" />
 
-    <ScrollView
-        android:id="@+id/scroll"
+
+
+    <LinearLayout
+        android:id="@+id/play_song_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bar"
-        android:layout_below="@id/favorite_desc">
+        android:layout_below="@id/play_desc"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp">
+        <include
+            android:id="@+id/play_bar"
+            layout="@layout/play_bar" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:background="@color/primary_light">
-
-                <ImageView
-                    android:id="@+id/img_search_album_1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_linkin_park" />
-
-                <TextView
-                    android:id="@+id/search_artist_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_artist_1"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/primary_text"
-                    android:layout_toEndOf="@id/img_search_album_1"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/search_song_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_song_1"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toEndOf="@id/img_search_album_1"
-                    android:layout_below="@id/search_artist_1"
-                    android:layout_marginStart="10dp" />
-
-                <ImageView
-                    android:id="@+id/img_play_black_1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_play_circle_black_48dp"
-                    android:layout_toEndOf="@id/img_search_album_1"
-                    android:layout_below="@id/search_song_1" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:background="@color/primary_light">
-
-                <ImageView
-                    android:id="@+id/img_search_album_2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_justin" />
-
-                <TextView
-                    android:id="@+id/search_artist_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_artist_2"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/primary_text"
-                    android:layout_toEndOf="@id/img_search_album_2"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/search_song_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_song_2"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toEndOf="@id/img_search_album_2"
-                    android:layout_below="@id/search_artist_2"
-                    android:layout_marginStart="10dp" />
-
-                <ImageView
-                    android:id="@+id/img_play_black_2"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_play_circle_black_48dp"
-                    android:layout_toEndOf="@id/img_search_album_2"
-                    android:layout_below="@id/search_song_2" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:background="@color/primary_light">
-
-                <ImageView
-                    android:id="@+id/img_search_album_3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_mrrain" />
-
-                <TextView
-                    android:id="@+id/search_artist_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_artist_3"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/primary_text"
-                    android:layout_toEndOf="@id/img_search_album_3"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/search_song_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_song_3"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toEndOf="@id/img_search_album_3"
-                    android:layout_below="@id/search_artist_3"
-                    android:layout_marginStart="10dp" />
-
-                <ImageView
-                    android:id="@+id/img_play_black_3"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_play_circle_black_48dp"
-                    android:layout_toEndOf="@id/img_search_album_3"
-                    android:layout_below="@id/search_song_3" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:background="@color/primary_light">
-
-                <ImageView
-                    android:id="@+id/img_search_album_4"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_metallica" />
-
-                <TextView
-                    android:id="@+id/search_artist_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_artist_4"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/primary_text"
-                    android:layout_toEndOf="@id/img_search_album_4"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/search_song_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_song_4"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toEndOf="@id/img_search_album_4"
-                    android:layout_below="@id/search_artist_4"
-                    android:layout_marginStart="10dp" />
-
-                <ImageView
-                    android:id="@+id/img_play_black_4"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_play_circle_black_48dp"
-                    android:layout_toEndOf="@id/img_search_album_4"
-                    android:layout_below="@id/search_song_4" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:background="@color/primary_light">
-
-                <ImageView
-                    android:id="@+id/img_search_album_5"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/ic_transformers" />
-
-                <TextView
-                    android:id="@+id/search_artist_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_artist_5"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@color/primary_text"
-                    android:layout_toEndOf="@id/img_search_album_5"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/search_song_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/search_song_5"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@color/secondary_text"
-                    android:layout_toEndOf="@id/img_search_album_5"
-                    android:layout_below="@id/search_artist_5"
-                    android:layout_marginStart="10dp" />
-
-                <ImageView
-                    android:id="@+id/img_play_black_5"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_play_circle_black_48dp"
-                    android:layout_toEndOf="@id/img_search_album_5"
-                    android:layout_below="@id/search_song_5" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bar"

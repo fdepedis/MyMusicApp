@@ -32,6 +32,9 @@
     <!-- String for payment activity description -->
     <string name="payment_desc">This is the payment page that display a set of album/song that the user can buy clicking the button associate. The payments happen through the Android Pay that requires Google Play Services Wallet 8.4.0 find at https://developers.braintreepayments.com site.</string>
 
+    <!-- String for payment activity description -->
+    <string name="play_desc">This is the play songs page that display the execution media player of the songs. The button for navigation songs are enable to skip next or previous or pause the songs.</string>
+
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
 
