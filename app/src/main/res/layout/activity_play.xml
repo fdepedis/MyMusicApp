@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/payment_activity"
+    android:id="@+id/play_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_sfondo_home"
     android:orientation="vertical"
-    tools:context="it.flaviodepedis.mymusicapp.PaymentActivity">
+    tools:context="it.flaviodepedis.mymusicapp.PlayActivity">
 
     <TextView
-        android:id="@+id/payment_desc"
+        android:id="@+id/favorite_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="@string/payment_desc"
+        android:text="@string/favorite_desc"
         android:textAppearance="?android:textAppearanceSmall"
         android:textColor="@color/description_activity" />
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bar"
-        android:layout_below="@id/payment_desc">
+        android:layout_below="@id/favorite_desc">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,13 +41,13 @@
                     android:id="@+id/img_search_album_1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_top_hits_italy" />
+                    android:src="@drawable/ic_linkin_park" />
 
                 <TextView
                     android:id="@+id/search_artist_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/search_artist_6"
+                    android:text="@string/search_artist_1"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@color/primary_text"
                     android:layout_toEndOf="@id/img_search_album_1"
@@ -58,22 +58,22 @@
                     android:id="@+id/search_song_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/search_song_6"
+                    android:text="@string/search_song_1"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:textColor="@color/secondary_text"
                     android:layout_toEndOf="@id/img_search_album_1"
                     android:layout_below="@id/search_artist_1"
                     android:layout_marginStart="10dp" />
 
-                <Button
-                    android:id="@+id/btn_play_1"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:id="@+id/img_play_black_1"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/btnBuyNow"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_play_circle_black_48dp"
+                    android:layout_toEndOf="@id/img_search_album_1"
+                    android:layout_below="@id/search_song_1" />
 
             </RelativeLayout>
 
@@ -111,15 +111,15 @@
                     android:layout_below="@id/search_artist_2"
                     android:layout_marginStart="10dp" />
 
-                <Button
-                    android:id="@+id/btn_play_2"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:id="@+id/img_play_black_2"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/btnBuyNow"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_play_circle_black_48dp"
+                    android:layout_toEndOf="@id/img_search_album_2"
+                    android:layout_below="@id/search_song_2" />
 
             </RelativeLayout>
 
@@ -157,15 +157,15 @@
                     android:layout_below="@id/search_artist_3"
                     android:layout_marginStart="10dp" />
 
-                <Button
-                    android:id="@+id/btn_play_3"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:id="@+id/img_play_black_3"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/btnBuyNow"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_play_circle_black_48dp"
+                    android:layout_toEndOf="@id/img_search_album_3"
+                    android:layout_below="@id/search_song_3" />
 
             </RelativeLayout>
 
@@ -203,15 +203,15 @@
                     android:layout_below="@id/search_artist_4"
                     android:layout_marginStart="10dp" />
 
-                <Button
-                    android:id="@+id/btn_play_4"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:id="@+id/img_play_black_4"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/btnBuyNow"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_play_circle_black_48dp"
+                    android:layout_toEndOf="@id/img_search_album_4"
+                    android:layout_below="@id/search_song_4" />
 
             </RelativeLayout>
 
@@ -249,15 +249,15 @@
                     android:layout_below="@id/search_artist_5"
                     android:layout_marginStart="10dp" />
 
-                <Button
-                    android:id="@+id/btn_play_5"
-                    android:layout_width="80dp"
+                <ImageView
+                    android:id="@+id/img_play_black_5"
+                    android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/btnBuyNow"/>
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_play_circle_black_48dp"
+                    android:layout_toEndOf="@id/img_search_album_5"
+                    android:layout_below="@id/search_song_5" />
 
             </RelativeLayout>
 

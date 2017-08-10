@@ -48,11 +48,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
 
-            <!-- Android Pay requires Google Play Services Wallet 8.4.0  -->
+            <!-- Android Pay requires Google Play Services Wallet 8.4.0 -->
             <!-- https://developers.braintreepayments.com/guides/android-pay/client-side/android/v1 -->
             <meta-data
                 android:name="com.google.android.gms.wallet.api.enabled"
                 android:value="true" />
+        </activity>
+        <activity android:name=".PlayActivity"
+            android:label="@string/play_label"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 

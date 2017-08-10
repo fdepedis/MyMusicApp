@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_sfondo_home"
     android:orientation="vertical"
-    tools:context="it.flaviodepedis.mymusicapp.MainActivity">
+    tools:context="it.flaviodepedis.mymusicapp.AlbumActivity">
 
     <TextView
         android:id="@+id/album_desc"

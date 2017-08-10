@@ -14,6 +14,9 @@
     <!-- String for Payment Page name -->
     <string name="payment_label">Payment Page</string>
 
+    <!-- String for Play Song Page name -->
+    <string name="play_label">Play Song Page</string>
+
     <!-- String for activity main description -->
     <string name="main_desc">This is a main page that diplay a variety mood where the user can choose in according to their preferences. At the bottom of the page, contain the navigation button to link other activity.</string>
 
