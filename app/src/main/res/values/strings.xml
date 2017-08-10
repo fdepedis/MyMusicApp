@@ -9,7 +9,7 @@
     <string name="main_desc">This is a main page that diplay a variety mood where the user can choose in according to their preferences. At the bottom of the page, contain the navigation button to link other activity.</string>
 
     <!-- String for search activity description -->
-    <string name="search_desc">This is search page where user can search songs and the result of search appear below the search view. Clicking on the result the user is linked on the songs page. At the bottom of the page, contain the navigation button to link other activity.</string>
+    <string name="search_desc">This is the search page where user can search songs and the result of search appear below the search view. Clicking on the result the user is linked on the songs page. At the bottom of the page, contain the navigation button to link other activity.</string>
 
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
