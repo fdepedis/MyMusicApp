@@ -17,22 +17,12 @@
         android:textAppearance="?android:textAppearanceSmall"
         android:textColor="@color/divider" />
 
-    <SearchView
-        android:id="@+id/search_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/main_desc"
-        android:layout_margin="15dp"
-        android:background="@color/primary"
-        android:iconifiedByDefault="false"
-        android:queryHint="@string/search_song" />
-
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/search_view"
-        android:layout_above="@+id/bar">
+        android:layout_above="@+id/bar"
+        android:layout_below="@id/main_desc">
 
         <GridLayout
             android:id="@+id/gridview"
@@ -96,12 +86,9 @@
         android:orientation="horizontal">
 
         <include
-            android:id="@+id/menu_bar_1"
-            layout="@layout/menu_bar_1" />
+            android:id="@+id/menu_bar_2"
+            layout="@layout/menu_bar_2" />
 
     </LinearLayout>
 
 </RelativeLayout>
-
-
-
