@@ -26,8 +26,8 @@
     <!-- String for album activity description -->
     <string name="album_desc">This is the album page where reside the favorite album for the user. In the bottom of the page there are the navigation button to link other pages.</string>
 
-    <!-- String for activity main description -->
-    <string name="payment_desc">This is the payment page that diplay a set of album/song that the user can buy clicking the button associate. At the bottom of the page, contain the navigation button to link other activity.</string>
+    <!-- String for payment activity description -->
+    <string name="payment_desc">This is the payment page that display a set of album/song that the user can buy clicking the button associate. The payments happen through the Android Pay that requires Google Play Services Wallet 8.4.0 find at https://developers.braintreepayments.com site.</string>
 
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
