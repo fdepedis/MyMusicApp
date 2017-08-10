@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/play_activity"
     android:layout_width="match_parent"
@@ -7,6 +7,18 @@
     android:background="@drawable/ic_sfondo_home"
     android:orientation="vertical"
     tools:context="it.flaviodepedis.mymusicapp.PlayActivity">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/menu_bar_2"
+            layout="@layout/menu_bar_2" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/play_desc"
@@ -17,13 +29,46 @@
         android:textAppearance="?android:textAppearanceSmall"
         android:textColor="@color/description_activity" />
 
+    <ImageView
+        android:id="@+id/img_active_song"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_linkin_park"/>
 
+    <TextView
+        android:id="@+id/search_artist_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_artist_1"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/search_song_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_song_1"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/secondary_text" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:max="100"
+        android:progress="25" />
 
     <LinearLayout
         android:id="@+id/play_song_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/play_desc"
         android:orientation="horizontal">
 
         <include
@@ -32,17 +77,4 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <include
-            android:id="@+id/menu_bar_2"
-            layout="@layout/menu_bar_2" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>
