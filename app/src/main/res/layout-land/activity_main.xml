@@ -65,8 +65,8 @@
         android:orientation="horizontal">
 
         <include
-            android:id="@+id/menu_bar_1"
-            layout="@layout/menu_bar_1" />
+            android:id="@+id/menu_bar_2"
+            layout="@layout/menu_bar_2" />
 
     </LinearLayout>
 
