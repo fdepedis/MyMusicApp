@@ -13,4 +13,11 @@
 
     <!-- String for search field -->
     <string name="search_song">Search Song</string>
+
+    <!-- String for search artist 1 -->
+    <string name="search_artist_1">Linkin Park</string>
+
+    <!-- String for search song 1 -->
+    <string name="search_song_1">One More Light</string>
+
 </resources>
