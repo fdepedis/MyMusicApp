@@ -25,54 +25,69 @@
         android:layout_above="@+id/bar">
 
         <GridLayout
-            android:id="@+id/gridview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp">
+            android:columnCount="3">
 
             <ImageView
                 android:id="@+id/img_hiphop"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_hiphop" />
+                android:src="@drawable/ic_hiphop"/>
 
             <ImageView
                 android:id="@+id/img_pop"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_pop" />
+                android:src="@drawable/ic_pop"/>
 
             <ImageView
                 android:id="@+id/img_blues"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_blues" />
+                android:src="@drawable/ic_blues"/>
 
             <ImageView
                 android:id="@+id/img_metal"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_metal" />
+                android:src="@drawable/ic_metal"/>
 
             <ImageView
                 android:id="@+id/img_rock"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_rock" />
+                android:src="@drawable/ic_rock"/>
 
             <ImageView
                 android:id="@+id/img_raggae"
-                android:layout_width="140dp"
+                android:layout_width="0dp"
                 android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
                 android:layout_margin="15dp"
-                android:src="@drawable/ic_raggae" />
+                android:src="@drawable/ic_raggae"/>
 
         </GridLayout>
 
