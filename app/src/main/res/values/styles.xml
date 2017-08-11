@@ -9,6 +9,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Style for page title in the activity -->
+    <style name="TitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+
     <!-- Style for description activity -->
     <style name="DescActivityStyle">
         <item name="android:layout_width">wrap_content</item>

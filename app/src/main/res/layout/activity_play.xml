@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context="it.flaviodepedis.mymusicapp.PlayActivity">
 
+    <TextView
+        android:id="@+id/play_title"
+        style="@style/TitleStyle"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/play_label" />
+
     <LinearLayout
         android:id="@+id/bar"
         android:layout_width="match_parent"

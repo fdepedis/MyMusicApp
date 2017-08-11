@@ -9,8 +9,14 @@
     tools:context="it.flaviodepedis.mymusicapp.PaymentActivity">
 
     <TextView
+        android:id="@+id/payment_title"
+        style="@style/TitleStyle"
+        android:text="@string/payment_label" />
+
+    <TextView
         android:id="@+id/payment_desc"
         style="@style/DescActivityStyle"
+        android:layout_below="@id/payment_title"
         android:text="@string/payment_desc" />
 
     <ScrollView

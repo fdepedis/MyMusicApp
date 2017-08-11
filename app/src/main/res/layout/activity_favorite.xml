@@ -9,8 +9,14 @@
     tools:context="it.flaviodepedis.mymusicapp.FavoriteActivity">
 
     <TextView
+        android:id="@+id/favorite_title"
+        style="@style/TitleStyle"
+        android:text="@string/favorite_label" />
+
+    <TextView
         android:id="@+id/favorite_desc"
         style="@style/DescActivityStyle"
+        android:layout_below="@id/favorite_title"
         android:text="@string/favorite_desc" />
 
     <ScrollView

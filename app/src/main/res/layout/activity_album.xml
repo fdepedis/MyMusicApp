@@ -9,8 +9,14 @@
     tools:context="it.flaviodepedis.mymusicapp.AlbumActivity">
 
     <TextView
+        android:id="@+id/album_title"
+        style="@style/TitleStyle"
+        android:text="@string/album_label" />
+
+    <TextView
         android:id="@+id/album_desc"
         style="@style/DescActivityStyle"
+        android:layout_below="@id/album_title"
         android:text="@string/album_desc" />
 
     <ScrollView

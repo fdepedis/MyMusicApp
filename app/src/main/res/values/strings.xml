@@ -2,6 +2,9 @@
     <!-- String for app name -->
     <string name="app_name">My Music App</string>
 
+    <!-- String for Home Page name -->
+    <string name="home_label">Home Page</string>
+
     <!-- String for Search Page name -->
     <string name="search_label">Search Page</string>
 

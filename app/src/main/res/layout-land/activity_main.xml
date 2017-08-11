@@ -9,7 +9,13 @@
     tools:context="it.flaviodepedis.mymusicapp.MainActivity">
 
     <TextView
+        android:id="@+id/main_title"
+        style="@style/TitleStyle"
+        android:text="@string/home_label" />
+
+    <TextView
         android:id="@+id/main_desc"
+        android:layout_below="@id/main_title"
         style="@style/DescActivityStyle"
         android:text="@string/main_desc" />
 

@@ -7,7 +7,7 @@
     <!-- Define new color -->
     <color name="primary_dark">#689F38</color>
     <color name="primary_light">#d5ecba</color>
-    <color name="primary_text">#212121</color>
+    <color name="primary_text">#5d5a5a</color>
     <color name="secondary_text">#757575</color>
     <color name="description_activity">#BDBDBD</color>
 </resources>
